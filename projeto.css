@@ -1,0 +1,5 @@
+*{margin: 0 auto; padding: 0; box-sizing: border-box;}
+
+body{background-color: aquamarine; margin: 20px; }
+#s1{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure; width: 900px;border-radius: 40px;}
+#s2{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
