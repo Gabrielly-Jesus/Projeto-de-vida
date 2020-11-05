@@ -3,3 +3,10 @@
 body{background-color: aquamarine; margin: 20px; }
 #s1{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure; width: 900px;border-radius: 40px;}
 #s2{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+#s3{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+#s4{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+#s5{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+#s6{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+#s7{ display: flex; flex-direction: column;flex-wrap: wrap; margin: 10px auto; background-color: azure;width: 900px; border-radius: 40px;}
+
+h1{ text-align: center;}
