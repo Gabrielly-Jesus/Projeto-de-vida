@@ -1,3 +1,10 @@
+// Teste JavaScript
+window.prompt('Qual é o seu nome ?')
+
+
+
+
+
 // Mostrando o nome
 document.querySelector("#botao").addEventListener("dblclick", () => {
   let nome;
@@ -91,17 +98,55 @@ if (t3 >= 1000) {
 
 // Fazendo a Tabuada 
 document.querySelector("#btnum3").addEventListener("click",() => {
-   let n1,t;
-   n1 = parseInt(document.getElementById("num1").value);
-    t = " ";
-   function t(){
-   for (let count = 0; count <= 10; count++) {       
+   let a;
+   a = parseInt(document.getElementById("num11").value);
+   for (let i = 0; i < 11; i++) {       
+    document.write(a +" x "+i+" = " + (a*i) + "<br>");
    }
-   document.write(n1 +" x "+count+" = " + (3*count) + "\n");
+   })
+
+   // Imprimindo um nome 200 Vezes
+document.querySelector("#btnum4").addEventListener("click", () =>{
+    let nome = document.getElementById("name").value;
+    for (let i = 1; i <=200; i++) {       
+        document.write(nome + "<br>");
+       }
 })
 
-// Imprimindo um nome 200 Vezes
-document.querySelector("#botao").addEventListener("click", () =>{
-    let nome = document.getElementById("nome").value;
-    alert("O nome digitado é "+nome);
+// Calcular
+
+
+document.querySelector("#bt").addEventListener("click", () =>{
+    let qtd = parseInt(document.getElementById("qtd").value);
+    let preco = parseInt(document.getElementById("qtd").value);
+    let t2 = qtd*preco;
+    t2=t2.toLocaleString("pt-br"), {style :"currency", currency:"BRL"}
+    document.getElementById("t2").value=t2;
+})
+
+document.querySelector("#dt").addEventListener("change",()=>{
+    localStorage.setItem("data",document.querySelector("#dt").value)
+});
+document.querySelector("#dt").value = localStorage.getItem("data");
+
+
+// Atividade altura e sexo
+// 4.	Crie um programa que entre com os 
+// dados de altura e sexo de 5 pessoas. 
+// Imprima na tela quantas pessoas são do
+//  sexo masculino e quantas pessoas são do sexo 
+//  feminino. Mostre também qual é a maior altura e se 
+// essa altura é de um homem ou uma mulher
+document.querySelector("#bt1").addEventListener("click", () => {
+let sexo1 = document.getElementById('g1').value
+let sexo2 = document.getElementById('g2').value
+let sexo3 = document.getElementById('g3').value
+let sexo4 = document.getElementById('g4').value
+let sexo5 = document.getElementById('g5').value
+document.write(sexo1 == 'M' ?  'Masculino': 'Feminino', 
+sexo2 == 'M' ?  'Masculino': 'Feminino' ,
+sexo3 == 'M' ?  'Masculino': 'Feminino',
+sexo4 == 'M' ?  'Masculino': 'Feminino',
+sexo5 == 'M' ?  'Masculino': 'Feminino')
+
 })

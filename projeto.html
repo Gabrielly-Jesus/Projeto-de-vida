@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="projeto.css">
 </head>
 <body>
+<h1>Trabalhando com o JS</h1>
+
 <section id="s1">
-    <h1>Trabalhando com JS</h1>
-    <h4>Que tal se cadastrar para ficar por dentro dos nossos conteúdos ?</h4>
+    <h2>Que tal se cadastrar para ficar por dentro dos nossos conteúdos ?</h2> <br>
     <label for="nome">Nome</label>
     <input type="text" id="nome">
     <label for="sobrenome">Sobrenome</label>
@@ -18,14 +19,120 @@
 </section>
 
 <section id="s2"> 
-    <br> <h2>Vamos Calcular ? escolha 2 Números e te mostraremos o resultado da conta.</h2>
+     <h2>Vamos Calcular ? escolha 2 Números e te mostraremos o resultado da conta.</h2> <br>
     <label for="n1">n1</label>
     <input type="number" id="n1">
     <label for="n2">n2</label>
     <input type="number" id="n2" >
     <input type="button" id="btn" value="calcular" title="Dê um duplo clique">
 </section>
-   
+
+<section id="s3">
+    <h2 id="part1">Descubra se seu número é Par ou Ímpar</h2> <br>
+    <br>
+    <label for="num">Digite um número</label>
+    <input type="text" id="num">
+    <br>
+    <input type="button" id="btnpar" value="Verificar">
+</section>
+<hr>
+<section id="s4">
+    <h2 id="part2">Esse Ano é bissexto ou não ?</h2> <br>
+    <br>
+    <label for="ano">Digite um ano</label>
+    <input type="text" id="ano">
+    <input type="button" id="btnano" value="Verificar">
+</section>
+<h1>Trabalhando com repetição</h1>
+<br>
+<section id="s5">
+<h2> Vamos contar !</h2> <br>
+<label for="num4"> Digite um Número</label>
+  <input type="text" id="num4"> 
+  <input type="button" id="btnum" value="Contar">
+</section>
+
+<h1> Mão na massa </h1>
+<section id="s6">
+<h2>Vamos calcular o valor da área dos quadrados </h2>
+<label for="nu1">Digite o valor de um dos lados do 1° quadrado</label>
+<input type="number" id="nu1"> <br>
+<label for="nu2">Digite o valor de um dos lados  do 2° quadrado</label>
+<input type="number" id="nu2" > <br>
+<label for="nu3">Digite o valor de um dos lados  do 3° quadrado</label>
+<input type="number" id="nu3" > <br>
+<label for="nu4">Digite o valor de um dos lados  do 4° quadrado</label>
+<input type="number" id="nu4" > <br>
+
+<input type="button" id="btnum2" value="calcular" >
+</section>
+
+<section id="s7">
+<h2>Hora da tabuada !</h2>
+<label for="num11">Digite um número</label>
+<input type="number" id="num11">
+<input type="button" id="btnum3" value="calcular" >
+<div id="resposta"></div>
+</section>
+<!-- Imprima 200 vezes um nome digitado numa interface. -->
+<section id="s8">
+    <h2>Vamos digitar seu nome 200 vezes</h2>
+    <label for="name">Nome</label>
+    <input type="text" id="name" >
+    <input type="button" id="btnum4" value="Mostrar">
+</section>
+
+<section id="s9" >
+<h1>produto</h1>
+<label for="qtd">Quantidade</label>
+<input type="text" id="qtd">
+<label for="preco">Preço Unitário</label>
+<input type="text" id="preco">
+<label for="t2">Total</label>
+<input type="text" id="t2">
+<label for="desc">Desconto</label>
+<input type="text" id="desc">
+<label for="tp">Total a Pagar</label>
+<input type="text" id="tp">
+<br><br>
+<input type="button" id="bt" value="Calcular">
+
+<!-- Atividade 10/11/2020 -->
+
+<label for="dt"> Data</label>
+<input type="date" id="dt">
+
+<!-- Exercício de hj/ -->
+<!-- 4.	Crie um programa que entre com os 
+dados de altura e sexo de 5 pessoas. 
+Imprima na tela quantas pessoas são do
+ sexo masculino e quantas pessoas são do sexo 
+ feminino. Mostre também qual é a maior altura e se 
+essa altura é de um homem ou uma mulher -->
+<br><br>
+<label for="p1">Pessoa 1</label>
+<input type="number" id="al1" >
+<input type="text" id= "g1" >
+<br>
+<label for="p2">Pessoa 2</label>
+<input type="number" id="al2">
+<input type="text" id="g2">
+<br>
+<label for="p3">Pessoa 3</label>
+<input type="number" id="alt3">
+<input type="text" id="g3">
+<br>
+<label for="p4">pessoa 4</label>
+<input type="number" id="alt4">
+<input type="text" id="g4">
+<br>
+<label for="p5">Pessoa 5</label>
+<input type="number" id="alt5">
+<input type="text" id="g5">
+
+<input type="button" id="bt1" value ="Calcular">
+</section>
+
 <script src="projeto.js"></script>
 </body>
 </html>
