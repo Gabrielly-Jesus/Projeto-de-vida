@@ -113,22 +113,108 @@ document.querySelector("#btnum4").addEventListener("click", () =>{
        }
 })
 
-// Calcular
+// Cadastro do Produto 
 
 
 document.querySelector("#bt").addEventListener("click", () =>{
     let qtd = parseInt(document.getElementById("qtd").value);
-    let preco = parseInt(document.getElementById("qtd").value);
+    let preco = parseInt(document.getElementById("preco").value);
     let t2 = qtd*preco;
+    let desc, tp;
+
+    if (qtd <= 5) {
+     desc= 2/100 * t2;
+    }
+    else if (qtd > 5 && qtd <=10) {
+        desc= 3/100 *t2;
+    }
+    else {
+        desc= 5/100*t2;
+    }
+
+    tp = t2-desc;
+
+    // Formatar e exibe os cálculos //
     t2=t2.toLocaleString("pt-br"), {style :"currency", currency:"BRL"}
+    desc=desc.toLocaleString('pt-br',{style:'currency', currency:'BRL'});
+    tp=tp.toLocaleString('pt-br',{style:'currency', currency:'BRL'});
+
     document.getElementById("t2").value=t2;
-})
+    document.getElementById("desc").value=desc;
+    document.getElementById("tp").value=tp;
+});
+// Senha
+    document.querySelector('#btsenha').addEventListener('click',()=>{
+        let senha = document.getElementById('senha');
+        document.getElementById('btsenha').value='Esconder senha';
+
+        if (senha.type=='password') {
+            senha.type='text';
+        } else{
+            senha.type='password';
+            document.getElementById('btsenha').value='Mostrar senha';
+        }
+    });
+
+
+
+// Outra coisa //
 
 document.querySelector("#dt").addEventListener("change",()=>{
     localStorage.setItem("data",document.querySelector("#dt").value)
 });
 document.querySelector("#dt").value = localStorage.getItem("data");
 
+// Vetor
+document.querySelector('#btvetor').addEventListener('click',()=>{
+
+let vetor =['Pedro','Bia','Gaby','Pablo'];
+document.write(vetor)
+document.write('<br>','<br>')
+// Listar ao contrário 
+document.write(vetor.reverse())
+document.write('<br>','<br>')
+// Listar por ordem alfabetica
+document.write(vetor.sort())
+document.write('<br>','<br>')
+// Mostra o número de elementos
+document.write(vetor.length)    
+
+})
+// let listagem =' ';
+// for(let posicao=0;posicao<vetor.length;posicao++)
+// {
+//     listagem=listagem+vetor[posicao]+'<br>';
+// }
+// document.write(listagem);
+// })
+
+
+// Execício dos números Vetor 
+document.querySelector('#btnnuns').addEventListener('click', ()=>{
+let numeros=document.getElementById('nuns').value;
+let vetnum=[ ];
+vetnum=numeros.split(' ');
+document.write(vetnum);
+})
+
+
+document.querySelector("#bt1").addEventListener('click', ()=>{
+let sexo = document.getElementsByClassName('genero').value;
+let pessoa = [sexo];
+pessoa=sexo;
+// let altura = document.getElementById('altura').value;
+// let pessoa2 = [altura];
+// pessoa2=altura.split(' ');
+document.write(pessoa);
+// sexo == 'M' ?  'Masculino': 'Feminino' 
+
+
+})
+
+// for (let index = 0; index < matriz.length; index++) {
+//     document.write(matriz[index]);
+// }
 
 // Atividade altura e sexo
 // 4.	Crie um programa que entre com os 
@@ -137,16 +223,15 @@ document.querySelector("#dt").value = localStorage.getItem("data");
 //  sexo masculino e quantas pessoas são do sexo 
 //  feminino. Mostre também qual é a maior altura e se 
 // essa altura é de um homem ou uma mulher
-document.querySelector("#bt1").addEventListener("click", () => {
-let sexo1 = document.getElementById('g1').value
-let sexo2 = document.getElementById('g2').value
-let sexo3 = document.getElementById('g3').value
-let sexo4 = document.getElementById('g4').value
-let sexo5 = document.getElementById('g5').value
-document.write(sexo1 == 'M' ?  'Masculino': 'Feminino', 
-sexo2 == 'M' ?  'Masculino': 'Feminino' ,
-sexo3 == 'M' ?  'Masculino': 'Feminino',
-sexo4 == 'M' ?  'Masculino': 'Feminino',
-sexo5 == 'M' ?  'Masculino': 'Feminino')
 
-})
+// let sexo1 = document.getElementById('g1').value
+// let sexo2 = document.getElementById('g2').value
+// let sexo3 = document.getElementById('g3').value
+// let sexo4 = document.getElementById('g4').value
+// let sexo5 = document.getElementById('g5').value
+// document.write(sexo1 == 'M' ?  'Masculino': 'Feminino', 
+// sexo2 == 'M' ?  'Masculino': 'Feminino' ,
+// sexo3 == 'M' ?  'Masculino': 'Feminino',
+// sexo4 == 'M' ?  'Masculino': 'Feminino',
+// sexo5 == 'M' ?  'Masculino': 'Feminino')
+
